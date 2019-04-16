@@ -229,9 +229,9 @@ net.ipv4.tcp_mtu_probing = 1
 net.ipv4.tcp_congestion_control = hybla
 EOT
 #Aplica as config e inicia o shadowsocks
-		sysctl -p
-		ssserver -c /etc/shadowsocks.json -d start
-		echo "`echo $'\n> '`Regras adicionadas ao /etc/sysctl.conf..."
+sysctl -p
+ssserver -c /etc/shadowsocks.json -d start
+echo "`echo $'\n> '`Regras adicionadas ao /etc/sysctl.conf..."
 fi
 
 #Finaliza e mostra as informações de conexão
